@@ -1,0 +1,11 @@
+zapytanie 1: INSERT INTO `filmy` (gatunki_id, tytul, rok, ocena) VALUES (5, "Suburbicon", 2017, 5);
+zapytanie 2: SELECT gatunki.nazwa, filmy.tytul FROM gatunki INNER JOIN filmy ON gatunki.id = filmy.id WHERE filmy.ocena = 6;
+zapytanie 3: SELECT tytul, rok FROM filmy WHERE gatunki_id = 3 AND ocena = 5;
+zapytanie 4: 
+USE dane;
+CREATE TABLE aktorzy
+(
+ id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+ imie TEXT,
+ nazwisko TEXT
+)
